@@ -2,6 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.dropdown:hover .dropdown-menu{
+  display:block;
+  margin-top: 0;
+}
+
+.dropdown-menu a:hover{
+  background-color: #ddd;
+  /* width: 100%; */
+}
+
 @keyframes example {
   from{opacity:0.0;}
   to{opacity:1.0;}
@@ -21,9 +31,18 @@ html {
   width: 70px;
 }
 
+/* .small-logo{
+  height: 100px;
+  width: 100px;
+} */
+
 .nav-opacity{
   opacity: 0.85;
 }
+
+/* .nav-link:hover { */
+  /* color: #000000; */
+/* } */
 
 .nav-link{
   margin: auto 1.5rem;
