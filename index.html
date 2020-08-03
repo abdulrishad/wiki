@@ -33,7 +33,16 @@
 
         $(mosqclass).css("opacity", "40%");
 
-        $(mosqclass).css("margin", "7% 0 0 " + ((7 - i) * 10 + 5) + "%")
+        margin_top = 2;
+        margin_left = ((7 - i) * 10 + Math.floor(Math.random() * 4));
+        margin = margin_top + "% 0 0 " + margin_left + "%"
+        
+        $(mosqclass).css("margin", "5% 0 0 0");
+
+        $(mosqclass).animate({
+          marginLeft: '+=' + margin_left + "%",
+          marginTop: '+=' + margin_top + "%"
+        }, 'slow')
 
       }
       
@@ -48,7 +57,18 @@
         }, "slow");
 
         $(mosqclass).css("opacity", "65%");
-        $(mosqclass).css("margin", "15% 0 0 " + ((12 - i) * 10 + 5) + "%")
+
+        margin_top = 10;
+        margin_left = ((12 - i) * 10 + Math.floor(Math.random() * 5));
+        margin = margin_top + "% 0 0 " + margin_left + "%"
+        
+        $(mosqclass).css("margin", "5% 0 0 0");
+
+        $(mosqclass).animate({
+          marginLeft: '+=' + margin_left + "%",
+          marginTop: '+=' + margin_top + "%"
+        }, 'slow')
+
 
       }
 
@@ -62,7 +82,16 @@
           width: '+=229px',
         }, "slow");
 
-        $(mosqclass).css("margin", "25% 0 0 " + ((15 - i) * 12 + 5) + "%")
+        margin_top = 20;
+        margin_left = ((15 - i) * 12 + Math.floor(Math.random() * 6));
+        margin = margin_top + "% 0 0 " + margin_left + "%"
+        
+        $(mosqclass).css("margin", "5% 0 0 0");
+
+        $(mosqclass).animate({
+          marginLeft: '+=' + margin_left + "%",
+          marginTop: '+=' + margin_top + "%"
+        }, 'slow')
 
       }
 
