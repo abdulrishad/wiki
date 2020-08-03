@@ -277,7 +277,6 @@ html {
 .mosquito {
   height: 0px;
   width: 0px;
-  margin: 7% 0 0 0;
   position: absolute;
   animation-iteration-count: infinite;
 }
