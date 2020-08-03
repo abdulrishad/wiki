@@ -21,6 +21,51 @@
 
       }, "slow");
 
+      // Row 1: 7 Small Mosquitoes, Least Opacity
+      for (i = 1; i <= 7; i++) {
+
+        let mosqclass = ".mosquito-" + i;
+        
+        $(mosqclass).animate({
+          height: '+=100px',
+          width: '+=114px',
+        }, "slow");
+
+        $(mosqclass).css("opacity", "40%");
+
+        $(mosqclass).css("margin", "7% 0 0 " + (i * 10) + "%")
+
+      }
+      
+      // Row 2: 5 Medium Mosquitoes, Medium Opacity
+      for (i = 8; i <= 12; i++) {
+
+        let mosqclass = ".mosquito-" + i;
+
+        $(mosqclass).animate({
+          height: '+=150px',
+          width: '+=172px',
+        }, "slow");
+
+        $(mosqclass).css("opacity", "65%");
+        $(mosqclass).css("margin", "15% 0 0 " + ((12 - i) * 10 + 5) + "%")
+
+      }
+
+      // Row 3: 3 Large Mosquitoes, Full Opacity
+      for (i = 13; i <= 15; i++) {
+
+        let mosqclass = ".mosquito-" + i;
+
+        $(mosqclass).animate({
+          height: '+=200px',
+          width: '+=229px',
+        }, "slow");
+
+        $(mosqclass).css("margin", "25% 0 0 " + ((15 - i) * 12 + 5) + "%")
+
+      }
+
     });
   </script>
   <script>
@@ -149,7 +194,23 @@
 
 
       <div class="first-div">
-        <img class="group" src="mosquitoes+1.png" alt="">
+        <!-- <img class="group" src="mosquitoes+1.png" alt=""> -->
+        <img class="mosquito mosquito-1" src="mosquito.png"> 
+        <img class="mosquito mosquito-2" src="mosquito.png">
+        <img class="mosquito mosquito-3" src="mosquito.png">
+        <img class="mosquito mosquito-4" src="mosquito.png">
+        <img class="mosquito mosquito-5" src="mosquito.png">
+        <img class="mosquito mosquito-6" src="mosquito.png">
+        <img class="mosquito mosquito-7" src="mosquito.png">
+        <img class="mosquito mosquito-8" src="mosquito.png">
+        <img class="mosquito mosquito-9" src="mosquito.png">
+        <img class="mosquito mosquito-10" src="mosquito.png">
+        <img class="mosquito mosquito-11" src="mosquito.png">
+        <img class="mosquito mosquito-12" src="mosquito.png">
+        <img class="mosquito mosquito-13" src="mosquito.png">
+        <img class="mosquito mosquito-14" src="mosquito.png">
+        <img class="mosquito mosquito-15" src="mosquito.png">
+        
         <img class="big-logo" src="logo white.png" alt="">
         <h1 class=title-line>E-PeDeMa</h1>
         <h4 class=title-line2>E.coli based peptide drugs against malaria</h4>

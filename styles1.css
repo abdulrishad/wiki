@@ -251,3 +251,38 @@ html {
   margin-left: 56.5%;
 
 }
+
+
+/* Mosquito Animations */
+
+@keyframes mosq-0 {
+  0%   {top:0px;}
+  50%  {top:12.5px;}
+  100% {top:0px;}
+}
+
+@keyframes mosq-1 {
+  0%   {top:0px;}
+  50%  {top:13px;}
+  100% {top:0px;}
+}
+
+@keyframes mosq-2 {
+  0%   {top:0px;}
+  50%  {top:10.5px;}
+  100% {top:0px;}
+}
+
+.mosquito {
+  height: 0px;
+  width: 0px;
+  margin: 7% 0 0 0;
+  position: absolute;
+  animation-iteration-count: infinite;
+}
+
+.mosquito-1 {
+  animation-name: mosq-1;
+  animation-duration: 1s;
+  opacity: 40%;
+}
