@@ -22,7 +22,7 @@
       // }, "slow");
 
       // Row 1: 7 Small Mosquitoes, Least Opacity
-      for (i = 1; i <= 7; i++) {
+      for (i = 1; i <= 10; i++) {
 
         let mosqclass = ".mosquito-" + i;
         
@@ -33,12 +33,21 @@
 
         $(mosqclass).css("opacity", "40%");
 
-        $(mosqclass).css("margin", "7% 0 0 " + ((7 - i) * 10 + 5) + "%")
+        margin_top = 2;
+        margin_left = ((10 - i) * 8 + Math.floor(Math.random() * 4));
+        margin = margin_top + "% 0 0 " + margin_left + "%"
+        
+        $(mosqclass).css("margin", "5% 0 0 0");
+
+        $(mosqclass).animate({
+          marginLeft: '+=' + margin_left + "%",
+          marginTop: '+=' + margin_top + "%"
+        }, 'slow')
 
       }
       
       // Row 2: 5 Medium Mosquitoes, Medium Opacity
-      for (i = 8; i <= 12; i++) {
+      for (i = 11; i <= 17; i++) {
 
         let mosqclass = ".mosquito-" + i;
 
@@ -48,12 +57,23 @@
         }, "slow");
 
         $(mosqclass).css("opacity", "65%");
-        $(mosqclass).css("margin", "15% 0 0 " + ((12 - i) * 10 + 5) + "%")
+
+        margin_top = 10;
+        margin_left = ((17 - i) * 8 + Math.floor(Math.random() * 3));
+        margin = margin_top + "% 0 0 " + margin_left + "%"
+        
+        $(mosqclass).css("margin", "5% 0 0 0");
+
+        $(mosqclass).animate({
+          marginLeft: '+=' + margin_left + "%",
+          marginTop: '+=' + margin_top + "%"
+        }, 'slow')
+
 
       }
 
       // Row 3: 3 Large Mosquitoes, Full Opacity
-      for (i = 13; i <= 15; i++) {
+      for (i = 18; i <= 21; i++) {
 
         let mosqclass = ".mosquito-" + i;
 
@@ -62,12 +82,21 @@
           width: '+=229px',
         }, "slow");
 
-        $(mosqclass).css("margin", "25% 0 0 " + ((15 - i) * 12 + 5) + "%")
+        margin_top = 20;
+        margin_left = ((21 - i) * 10 + Math.floor(Math.random() * 6));
+        margin = margin_top + "% 0 0 " + margin_left + "%"
+        
+        $(mosqclass).css("margin", "5% 0 0 0");
+
+        $(mosqclass).animate({
+          marginLeft: '+=' + margin_left + "%",
+          marginTop: '+=' + margin_top + "%"
+        }, 'slow')
 
       }
 
       // Animation Control for all Mosquitoes
-      for (i = 1; i <= 15; i++) {
+      for (i = 1; i <= 21; i++) {
         
         let mosqclass = ".mosquito-" + i;
 
@@ -219,6 +248,12 @@
         <img class="mosquito mosquito-13" src="mosquito.png">
         <img class="mosquito mosquito-14" src="mosquito.png">
         <img class="mosquito mosquito-15" src="mosquito.png">
+        <img class="mosquito mosquito-16" src="mosquito.png">
+        <img class="mosquito mosquito-17" src="mosquito.png">
+        <img class="mosquito mosquito-18" src="mosquito.png">
+        <img class="mosquito mosquito-19" src="mosquito.png">
+        <img class="mosquito mosquito-20" src="mosquito.png">
+        <img class="mosquito mosquito-21" src="mosquito.png">
         
         <img class="big-logo" src="logo white.png" alt="">
         <h1 class=title-line>E-PeDeMa</h1>
